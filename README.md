@@ -22,11 +22,6 @@ pip install requests python-dotenv
 ## Usage
 python main.py
 
-## Add V2 Section
-
-- FastAPI backend with basic web interface
-- Note: Using mock data (API rate limits), V3 will integrate Space-Track data
-
 ## V1 Output
 
 ===== Satellites Flying Overhead =====
@@ -47,3 +42,8 @@ Satellite Launch Date: 2015-07-25
 Latitude: 54.295
 Longitude: -135.9019
 Altitude: 21528.5885
+
+## Add V2 Section
+
+- FastAPI backend with basic web interface
+- Note: Using mock data (API rate limits), V3 will integrate Space-Track data
