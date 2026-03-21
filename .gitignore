@@ -1,2 +1,5 @@
 .env
 data_log/
+venv/
+__pycache__/
+*.pyc

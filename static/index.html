@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Satellite Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Satellites Overhead</h1>
+    <button onclick="fetchSatellites()">Refresh</button>
+    <div class="card" id="satellites"></div>
+    
+    <script>
+        async function fetchSatellites() {
+            const response = await fetch('/satellites');
+            const data = await response.json();
+            
+            let html = '';
+            for (const [category, satellites] of Object.entries(data)) {
+                html += `<h2>${category}</h2>`;
+                satellites.forEach(sat => {
+                    html += `<p>${sat.satname} - ID: ${sat.satid}</p>`;
+                });
+            }
+            document.getElementById('satellites').innerHTML = html;
+        }
+        fetchSatellites();
+    </script>
+</body>
+</html>

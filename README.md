@@ -22,7 +22,12 @@ pip install requests python-dotenv
 ## Usage
 python main.py
 
-## Current Output
+## Add V2 Section
+
+- FastAPI backend with basic web interface
+- Note: Using mock data (API rate limits), V3 will integrate Space-Track data
+
+## V1 Output
 
 ===== Satellites Flying Overhead =====
 
